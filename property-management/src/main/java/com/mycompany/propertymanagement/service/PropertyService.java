@@ -2,6 +2,9 @@ package com.mycompany.propertymanagement.service;
 
 import com.mycompany.propertymanagement.dto.PropertyDTO;
 
+import java.util.List;
+
 public interface PropertyService {
-    public PropertyDTO saveProperty(PropertyDTO propertyDTO);
+    PropertyDTO saveProperty(PropertyDTO propertyDTO);
+    List<PropertyDTO> getAllProperties();
 }
